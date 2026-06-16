@@ -1,0 +1,883 @@
+/* Tipografía global */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+/* ============================
+   BLOQUEO TOTAL DE INTERACCIÓN
+   ============================ */
+
+/* Bloquear selección de texto en toda la web */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Permitir selección solo en inputs y textarea */
+input,
+textarea {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* Bloquear arrastre de imágenes y evitar guardado */
+img {
+  -webkit-user-drag: none; /* evita arrastrar imágenes */
+  pointer-events: none; /* evita mantener pulsado para guardar */
+}
+
+/* Bloquear menú contextual (clic derecho / pulsación larga) */
+body {
+  -webkit-touch-callout: none; /* iPhone */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Bloquear zoom táctil (pinch-to-zoom) */
+html,
+body {
+  touch-action: manipulation;
+  overscroll-behavior: none;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #f2d27a;
+}
+
+/* Párrafos */
+p {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: #efe8e8;
+}
+
+/* Botones */
+button,
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px; /* ajusta según tu header */
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom, #0a1a2f, #1b2c45, #e8eef3);
+  color: #f2f2f2;
+}
+
+/* ANIMACIÓN */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HEADER */
+.header {
+  background: rgba(10, 26, 47, 0.637);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+/* NAV */
+.nav a {
+  margin-left: 20px;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.nav a:hover {
+  color: #f2d27a;
+}
+
+/* HERO ULTRA COMPACTO Y PROTAGONISTA */
+.hero {
+  position: relative;
+  padding: 20px 20px 40px 20px; /* mucho menos espacio vertical */
+  min-height: 55vh; /* hero compacto, sin hectáreas vacías */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* degradado que se fusiona con el negro del logo */
+  background: radial-gradient(
+    circle at center,
+    #000000 0%,
+    #0a1a2f 40%,
+    #1b2c45 100%
+  );
+}
+
+/* HALO DORADO MÁS GRANDE Y MÁS CERCA DEL LOGO */
+.hero {
+  position: relative;
+  padding: 20px 20px 40px 20px;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(17, 46, 83, 0), rgba(5, 22, 46, 0.75)),
+    url("../assets/fondo_hero1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* LOGO REALMENTE GRANDE Y PROTAGONISTA */
+.hero-logo {
+  width: 725px; /* aquí está la magia: logo gigante */
+  max-width: 99%; /* ancho del logo */
+  height: auto;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+
+  /* sombra elegante */
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.55));
+}
+
+/* SUBTÍTULO */
+.hero-subtitle {
+  font-size: 2rem;
+  color: #f2d27a;
+  opacity: 0.95;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* BANDA CORPORATIVA */
+.banda-corporativa {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url("../assets/ultra.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #f4f1eb;
+}
+
+/* SERVICIOS */
+.servicios {
+  padding: 60px 20px;
+  text-align: center;
+  background:
+    linear-gradient(rgba(17, 46, 83, 0.75), rgba(5, 22, 46, 0.75)),
+    url("../assets/marmol1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.servicios h2 {
+  color: #f2d27a;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+/* TARJETAS PREMIUM */
+.card {
+  background: rgba(10, 26, 47, 0.5);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(242, 210, 122, 0.35);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #f2d27a;
+  box-shadow: 0 0 25px rgba(242, 210, 122, 0.45);
+}
+
+.icono-servicio {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+/* POR QUÉ ELEGIRNOS */
+.por-que {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url("../assets/definitivo.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.por-que h2 {
+  color: #f2d27a;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+.por-que .card {
+  background: rgba(10, 26, 47, 0.5);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(242, 210, 122, 0.35);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.por-que .card:hover {
+  transform: translateY(-8px);
+  border-color: #f2d27a;
+  box-shadow: 0 0 25px rgba(242, 210, 122, 0.45);
+}
+
+/* ============================
+   EQUIPO – SECCIÓN PREMIUM
+   ============================ */
+
+.equipo {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.equipo h2 {
+  color: #f2d27a;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+/* TARJETAS DE ABOGADOS PREMIUM */
+.equipo-card {
+  background: url("../assets/marmol.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(242, 210, 122, 0.65);
+  max-width: 400px;
+  margin: 0 auto;
+
+  /* NUEVO: estructura estable */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.equipo-card:hover {
+  transform: translateY(-10px);
+  border-color: #f2d27a;
+  box-shadow: 0 0 28px rgba(242, 210, 122, 0.45);
+}
+
+.equipo-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+
+  /* NUEVO: distancia uniforme antes del nombre */
+  margin-bottom: 15px;
+}
+
+/* ============================
+   NOMBRES – VISIBILIDAD Y ALINEACIÓN
+   ============================ */
+
+.equipo-card h3 {
+  margin: 0; /* elimina márgenes inconsistentes */
+  margin-bottom: 6px; /* distancia uniforme */
+  line-height: 1.2;
+
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #f2d27a;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.55);
+}
+
+/* Especialidad */
+.equipo-card p {
+  margin: 0;
+  margin-bottom: 10px;
+  line-height: 1.3;
+
+  font-size: 1.125rem; /* 18px */
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* Ajuste móvil */
+@media (max-width: 768px) {
+  .equipo-card h3 {
+    font-size: 1.75rem;
+    letter-spacing: 1.4px;
+  }
+}
+
+/* CONTACTO */
+.contacto {
+  padding: 60px 20px;
+  text-align: center;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url("../assets/balanza.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contacto h2 {
+  color: #f2d27a;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 6px rgb(0, 0, 0);
+}
+
+/* FONDO PARA UNIFICAR DESDE POR QUÉ ELEGIRNOS HASTA CONTACTO */
+.equipo {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url("../assets/definitivo.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contacto-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs y textarea con Inter y buena legibilidad */
+.contacto-form input,
+.contacto-form textarea {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #f5f7fa; /* texto claro y legible */
+  background: rgba(10, 26, 47, 0.65);
+  border: 1px solid #31415a;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* Placeholder más visible */
+.contacto-form input::placeholder,
+.contacto-form textarea::placeholder {
+  color: #dfe6ee;
+  opacity: 1;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+/* Asegurar que el textarea NO cambie de tipografía */
+.contacto-form textarea {
+  font-family: "Inter", sans-serif !important;
+  line-height: 1.5;
+}
+
+/* Mejor enfoque visual al hacer clic */
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  outline: none;
+  border-color: #4a6fa5;
+  box-shadow: 0 0 4px rgba(74, 111, 165, 0.6);
+}
+
+.contacto-form .btn {
+  background: #f2d27a;
+  color: #0a1a2f;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contacto-form .btn:hover {
+  background: #d9b866;
+}
+
+/* FOOTER */
+.footer {
+  background: rgba(10, 26, 47, 0.95);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-links a {
+  color: #f2f2f2;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #f2d27a;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 200;
+}
+.whatsapp-float img {
+  width: 60px;
+}
+
+/* LOADER */
+.loader-balanza {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 26, 47, 0.92);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.loader-balanza.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.balanza {
+  width: 80px;
+  height: 80px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1048/1048949.png");
+  background-size: contain;
+  animation: latido 1.2s infinite ease-in-out;
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-logo {
+    width: 260px;
+  }
+}
+
+/* SECCIÓN EXCLUSIVA EXTRANJERÍA */
+.extranjeria {
+  padding: 150px 20px;
+  text-align: center;
+  position: relative;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(10, 26, 47, 0.4),
+      rgba(20, 34, 55, 0.32),
+      rgba(30, 46, 70, 0.26),
+      rgba(40, 58, 85, 0.22),
+      rgba(55, 75, 100, 0.18)
+    ),
+    url("../assets/oficina.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+}
+
+.extranjeria h2 {
+  color: #f2d27a;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.75);
+}
+
+.extranjeria-sub {
+  max-width: 600px;
+  margin: 0 auto 150px auto;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.799);
+  opacity: 0.9;
+}
+
+.extranjeria-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.ex-card {
+  background: rgba(20, 39, 63, 0.511);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(242, 210, 122, 0.35);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.ex-card:hover {
+  transform: translateY(-8px);
+  border-color: #f2d27a;
+  box-shadow: 0 0 25px rgba(242, 210, 122, 0.45);
+}
+
+/* HERO EXCLUSIVO EXTRANJERÍA */
+.hero-ex {
+  padding: 120px 20px;
+  text-align: center;
+  position: relative;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("../assets/marmol1.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Fix desplazamiento lateral solo en la página de extranjería */
+.hero-ex {
+  overflow: hidden; /* evita que el pseudo-elemento provoque scroll lateral */
+}
+
+@media (max-width: 768px) {
+  .hero-ex {
+    background-attachment: scroll !important; /* quita el fixed en móvil */
+  }
+
+  .hero-ex::before {
+    width: 500px;
+    height: 500px; /* reducimos el círculo para que no se salga tanto */
+  }
+}
+
+.hero-ex::before {
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle, rgba(242, 210, 122, 0), transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.hero-ex h1 {
+  position: relative;
+  z-index: 2;
+  color: #f2d27a;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.hero-ex-sub {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* CONTENIDO */
+.ex-info {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ex-info h2 {
+  color: #f2d27a;
+  margin-bottom: 20px;
+}
+
+.ex-info-sub {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  opacity: 0.9;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.55);
+}
+
+.ex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.ex-card:hover {
+  transform: translateY(-8px);
+  border-color: #f2d27a;
+  box-shadow: 0 0 25px rgba(242, 210, 122, 0.45);
+}
+
+/* CTA */
+.cta-ex {
+  padding: 80px 20px;
+  text-align: center;
+  background: rgba(10, 26, 47, 0.9);
+}
+
+.cta-ex h2 {
+  color: #f2d27a;
+  margin-bottom: 15px;
+}
+
+.btn-ex {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #f2d27a;
+  color: #0a1a2f;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 55px; /* ajusta a tu gusto */
+}
+
+.btn-ex:hover {
+  background: #d9b866;
+}
+
+/* ============================
+   MENÚ RESPONSIVE PREMIUM
+   ============================ */
+
+/* Estado inicial del menú en escritorio */
+.nav {
+  display: flex;
+  gap: 20px;
+  transition: 0.3s ease;
+}
+
+/* Hamburguesa oculta en escritorio */
+.hamburger {
+  display: none;
+}
+
+/* ======== MÓVIL ======== */
+@media (max-width: 768px) {
+  /* Ocultar menú por defecto */
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: rgba(10, 26, 47, 0.97);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    width: 220px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+
+    /* Animación de deslizamiento */
+    opacity: 0;
+    transform: translateY(-15px);
+    pointer-events: none;
+    transition: all 0.35s ease;
+  }
+
+  /* Cuando JS activa el menú */
+  .nav.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* Mostrar hamburguesa */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #f2d27a;
+    border-radius: 3px;
+    transition: 0.3s ease;
+  }
+
+  /* Animación hamburguesa → X */
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
+
+/* ======== ESCRITORIO ======== */
+@media (min-width: 769px) {
+  .nav {
+    display: flex !important;
+    position: static;
+    background: none;
+    padding: 0;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* ============================
+   LOGO ARRIBA – HAMBURGUESA DEBAJO (MÓVIL)
+   ============================ */
+@media (max-width: 768px) {
+
+  /* Contenedor del header en móvil */
+  header {
+    display: flex;
+    flex-direction: column; /* ← ahora en columna */
+    align-items: center;
+    padding: 18px 20px;
+  }
+
+  /* LOGO ARRIBA */
+  header .logo {
+    order: 1;
+    margin-bottom: 12px;
+  }
+
+  header .logo img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  /* HAMBURGUESA DEBAJO DEL LOGO */
+  .hamburger {
+    order: 2;               /* ← ahora va debajo del logo */
+    align-self: flex-start; /* pegado a la izquierda */
+    margin-left: 0;
+    margin-bottom: 10px;
+    transform: scale(1.3);
+  }
+
+  /* MENÚ DESPLEGADO DEBAJO DEL BOTÓN */
+  nav ul {
+    order: 3;
+    position: relative !important;
+    display: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.88);
+    padding: 15px 0;
+    margin-top: 10px;
+  }
+
+  /* Menú abierto */
+  nav ul.active,
+  nav ul.open {
+    display: block !important;
+  }
+}

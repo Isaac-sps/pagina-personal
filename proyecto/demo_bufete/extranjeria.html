@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extranjería y Documentación Internacional</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elementos = document.querySelectorAll(".fade-in");
+      const opciones = { threshold: 0.2 };
+
+      const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+          if (entrada.isIntersecting) {
+            entrada.target.classList.add("visible");
+          }
+        });
+      }, opciones);
+
+      elementos.forEach((el) => observador.observe(el));
+    });
+  </script>
+
+  <body>
+    <!-- HERO EXCLUSIVO -->
+    <section class="hero-ex">
+      <h1>Extranjería y Documentación Internacional</h1>
+      <p class="hero-ex-sub">
+        Asistencia legal especializada para quienes residen en el extranjero y
+        requieren trámites, documentos o representación en su país de origen sin
+        necesidad de viajar.
+      </p>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="ex-info fade-in">
+      <h2>¿En qué podemos ayudarte?</h2>
+
+      <p class="ex-info-sub">
+        Nuestro equipo coordina directamente con abogados en territorio nacional
+        para gestionar documentos oficiales, apostillas, poderes notariales,
+        trámites consulares y procesos administrativos de forma rápida, segura y
+        legal.
+      </p>
+
+      <div class="ex-grid">
+        <div class="ex-card">
+          <h3>Documentos Oficiales</h3>
+          <p>
+            Certificados de nacimiento, matrimonio, defunción, antecedentes
+            penales y más.
+          </p>
+        </div>
+
+        <div class="ex-card">
+          <h3>Apostillas Internacionales</h3>
+          <p>Legalización de documentos para uso en el extranjero.</p>
+        </div>
+
+        <div class="ex-card">
+          <h3>Poderes Notariales</h3>
+          <p>Representación legal en tu país sin necesidad de desplazarte.</p>
+        </div>
+
+        <div class="ex-card">
+          <h3>Trámites Consulares</h3>
+          <p>Gestiones ante consulados y autoridades administrativas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-ex fade-in">
+      <h2>¿Necesitas iniciar un trámite desde el extranjero?</h2>
+      <p>
+        Estamos listos para ayudarte con un proceso seguro, rápido y
+        profesional.
+      </p>
+      <a href="index.html#contacto" class="btn-ex">Solicitar asistencia</a>
+    </section>
+  </body>
+</html>
