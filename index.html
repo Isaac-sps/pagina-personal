@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aureon | Leonel – Desarrollador Web Junior</title>
 
-    <!-- Tipografía Inter -->
+    <!-- Tipografías -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lexend:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
 
@@ -20,17 +20,16 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-textos">
-          <h1>Construyendo mi camino, un paso cada día.</h1>
+          <h1>Construyendo un camino juntos, un paso cada día.</h1>
 
           <p class="hero-subtitle">
-            Soy Leonel, Desarrollador Web Junior enfocado en crear soluciones
+            Desarrollador Web enfocado en crear soluciones
             claras, modernas y funcionales para negocios que necesitan presencia
             digital real.
           </p>
 
           <p class="hero-text">
-            No nací sabiendo, pero nací dispuesto. Cada día doy un paso, aunque
-            sea pequeño. Mi historia no está escrita: la estoy construyendo.
+            Tu negocio merece procesos sin caos, resultados rápidos y un enfoque profesional adaptado a tus necesidades y objetivos.
           </p>
 
           <div class="hero-buttons">
@@ -55,7 +54,6 @@
         </p>
 
         <div class="grid">
-          <!-- Servicio 1 con imagen grande -->
           <div class="card servicio-grande">
             <div class="imagen-servicio">
               <img src="assets/landing.png" alt="Landing Pages" />
@@ -63,48 +61,67 @@
             <h3>Landing Pages Profesionales</h3>
             <p>
               Diseños modernos, rápidos y optimizados para convertir visitantes
-              en clientes. Incluye contacto, mapa y WhatsApp.
+              en clientes.
             </p>
           </div>
 
-          <!-- Servicio 2 con imagen grande -->
           <div class="card servicio-grande">
             <div class="imagen-servicio">
               <img src="assets/microservicios.jpg" alt="Microservicios" />
             </div>
             <h3>Microservicios Web</h3>
             <p>
-              Formularios avanzados, sistemas de reservas, generadores de
-              presupuestos y herramientas hechas a medida.
+              Formularios avanzados, sistemas de reservas y herramientas a
+              medida.
             </p>
           </div>
 
-          <!-- Servicio 3 con imagen grande -->
           <div class="card servicio-grande">
             <div class="imagen-servicio">
-              <img
-                src="assets/automatizacion.png"
-                alt="Automatización con Python"
-              />
+              <img src="assets/automatizacion.png" alt="Automatización con Python" />
             </div>
             <h3>Automatización con Python</h3>
-            <p>
-              Scripts automáticos para envío de correos, reportes, inventarios y
-              tareas repetitivas.
-            </p>
+            <p>Scripts automáticos para tareas repetitivas.</p>
           </div>
 
-          <!-- Servicio 4 con imagen grande -->
           <div class="card servicio-grande">
             <div class="imagen-servicio">
               <img src="assets/sistemas.jpg" alt="Sistemas Internos" />
             </div>
             <h3>Mini‑Sistemas Internos</h3>
-            <p>
-              Control de inventario, gestión de clientes, registro de ventas y
-              soluciones internas para negocios pequeños.
-            </p>
+            <p>Control de inventario, gestión de clientes y más.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="contacto" id="contacto">
+      <div class="container">
+        <div class="contacto-wrapper reveal">
+
+          <div class="contacto-info">
+            <h2>Hablemos de tu proyecto</h2>
+            <p class="contacto-desc">
+              Cuéntame tu idea, tu negocio o tu necesidad. Te respondo
+              personalmente y sin compromiso.
+            </p>
+
+            <ul class="contacto-detalles">
+              <li>📧 leonel2131.dev@gmail.com</li>
+              <li>💬 WhatsApp disponible</li>
+              <li>📍 Mataró, Barcelona</li>
+              <li>⏰ L–V 9:00 a 18:00</li>
+            </ul>
+          </div>
+
+          <form action="https://formspree.io/f/{form_id}" method="POST" class="contacto-form">
+            <input name="nombre" type="text" placeholder="Tu nombre" required />
+            <input name="email" type="email" placeholder="Tu correo" required />
+            <textarea name="mensaje" placeholder="Cuéntame tu caso" required></textarea>
+            <button type="submit" class="btn-primary">Enviar mensaje</button>
+          </form>
+
         </div>
       </div>
     </section>
@@ -120,48 +137,22 @@
 
         <div class="grid">
           <div class="proyecto-card">
-            <img
-              src="assets/logo_tattoo.jpg"
-              class="proyecto-thumb"
-              alt="InkSoul Studio"
-            />
-
+            <img src="assets/logo_tattoo.jpg" class="proyecto-thumb" alt="InkSoul Studio" />
             <h3>InkSoul Studio – Landing Page</h3>
-            <p>
-              Landing page profesional para un estudio de tatuajes. Diseño
-              moderno, responsive y con animaciones.
-            </p>
-
+            <p>Landing page profesional para un estudio de tatuajes.</p>
             <div class="proyecto-buttons">
-              <a
-                href="proyectos/demo_tatuador/index.html"
-                target="_blank"
-                class="btn-primary"
-              >
+              <a href="proyectos/demo_tatuador/index.html" target="_blank" class="btn-primary">
                 Ver Demo
               </a>
             </div>
           </div>
 
           <div class="proyecto-card">
-            <img
-              src="assets/logo.jpeg"
-              class="proyecto-thumb"
-              alt="Bufete Manzano"
-            />
-
+            <img src="assets/logo.jpeg" class="proyecto-thumb" alt="Bufete Manzano" />
             <h3>Bufete Manzano | Castro & Asoc.</h3>
-            <p>
-              Landing page corporativa desarrollada como demo profesional para
-              un despacho legal.
-            </p>
-
+            <p>Landing page corporativa desarrollada como demo profesional.</p>
             <div class="proyecto-buttons">
-              <a
-                href="proyecto/demo_bufete/index.html"
-                target="_blank"
-                class="btn-primary"
-              >
+              <a href="proyecto/demo_bufete/index.html" target="_blank" class="btn-primary">
                 Ver Demo
               </a>
             </div>
@@ -169,5 +160,53 @@
         </div>
       </div>
     </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h3>Aureon</h3>
+          <p>Desarrollador Web Junior — Construyendo soluciones claras y modernas.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contáctame</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contacto">
+          <h4>Contacto</h4>
+          <ul>
+            <li>📧 leonel2131.dev@gmail.com</li>
+            <li>📍 Mataró, Barcelona</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 Aureon — Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <!-- ================= ANIMACIONES ================= -->
+    <script>
+      const reveals = document.querySelectorAll('.reveal');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.2 });
+
+      reveals.forEach(el => observer.observe(el));
+    </script>
   </body>
 </html>
+
+
