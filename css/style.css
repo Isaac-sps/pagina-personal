@@ -27,11 +27,20 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Lexend", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
   color: #111;
 }
+
+.hero-subtitle,
+.servicios-desc,
+.proyectos-desc,
+.contacto-desc {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
 
 h2 {
   font-size: 2rem;
@@ -49,7 +58,7 @@ p {
 /* Botones */
 .btn-primary,
 .btn-outline {
-  font-family: "Lexend", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   letter-spacing: -0.3px;
   transition: 0.25s ease;
@@ -271,7 +280,7 @@ p {
   border-radius: 10px;
   border: 1px solid #ccc;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   transition: 0.25s ease;
 }
 
@@ -357,7 +366,7 @@ p {
 
 .footer h3,
 .footer h4 {
-  font-family: "Lexend", sans-serif;
+  font-family: "Rubik", sans-serif;
   margin-bottom: 1rem;
   color: #ffffff;
 }
@@ -483,4 +492,16 @@ p {
   .contacto-detalles li {
     font-size: 1rem;
   }
+}
+
+/* ================== BLOQUEAR SELECCIÓN DE TEXTO E IMÁGENES ================== */
+body, 
+body * {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+img {
+  pointer-events: none;
 }
