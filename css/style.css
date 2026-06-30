@@ -505,3 +505,37 @@ body * {
 img {
   pointer-events: none;
 }
+
+
+/* ====================================
+   BOTÓN FLOTANTE WHATSAPP (LORDICON) 
+   ==================================== */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 9999;
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.whatsapp-float lord-icon {
+  width: 70px;
+  height: 70px;
+  pointer-events: none; /* evita selección del icono */
+}
+
+/* Animación suave de flotación */
+@keyframes float-whatsapp {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+.whatsapp-float {
+  animation: float-whatsapp 3s ease-in-out infinite;
+}

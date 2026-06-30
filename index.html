@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aureon | Leonel – Desarrollador Web Junior</title>
+    <title>IO | Leonel – Desarrollador Web Junior</title>
 
     <!-- Tipografías -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Lordicon Script (OBLIGATORIO) -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
     <!-- Archivo CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -23,13 +26,13 @@
           <h1>Construyendo un camino juntos, un paso cada día.</h1>
 
           <p class="hero-subtitle">
-            Desarrollador Web enfocado en crear soluciones
-            claras, modernas y funcionales para negocios que necesitan presencia
-            digital real.
+            Desarrollador Web enfocado en crear soluciones claras, modernas y
+            funcionales para negocios que necesitan presencia digital real.
           </p>
 
           <p class="hero-text">
-            Tu negocio merece procesos sin caos, resultados rápidos y un enfoque profesional adaptado a tus necesidades y objetivos.
+            Tu negocio merece procesos sin caos, resultados rápidos y un enfoque
+            profesional adaptado a tus necesidades y objetivos.
           </p>
 
           <div class="hero-buttons">
@@ -78,7 +81,10 @@
 
           <div class="card servicio-grande">
             <div class="imagen-servicio">
-              <img src="assets/automatizacion.png" alt="Automatización con Python" />
+              <img
+                src="assets/automatizacion.png"
+                alt="Automatización con Python"
+              />
             </div>
             <h3>Automatización con Python</h3>
             <p>Scripts automáticos para tareas repetitivas.</p>
@@ -99,7 +105,6 @@
     <section class="contacto" id="contacto">
       <div class="container">
         <div class="contacto-wrapper reveal">
-
           <div class="contacto-info">
             <h2>Hablemos de tu proyecto</h2>
             <p class="contacto-desc">
@@ -115,13 +120,26 @@
             </ul>
           </div>
 
-          <form action="https://formspree.io/f/{form_id}" method="POST" class="contacto-form">
-            <input name="nombre" type="text" placeholder="Tu nombre" required />
+          <form
+            action="https://formspree.io/f/{form_id}"
+            method="POST"
+            class="contacto-form"
+          >
+            <input
+              name="nombre"
+              type="text"
+              placeholder="Tu nombre"
+              required
+              oninput="soloTexto(this)"
+            />
             <input name="email" type="email" placeholder="Tu correo" required />
-            <textarea name="mensaje" placeholder="Cuéntame tu caso" required></textarea>
+            <textarea
+              name="mensaje"
+              placeholder="Cuéntame tu caso"
+              required
+            ></textarea>
             <button type="submit" class="btn-primary">Enviar mensaje</button>
           </form>
-
         </div>
       </div>
     </section>
@@ -137,22 +155,38 @@
 
         <div class="grid">
           <div class="proyecto-card">
-            <img src="assets/logo_tattoo.jpg" class="proyecto-thumb" alt="InkSoul Studio" />
+            <img
+              src="assets/logo_tattoo.jpg"
+              class="proyecto-thumb"
+              alt="InkSoul Studio"
+            />
             <h3>InkSoul Studio – Landing Page</h3>
             <p>Landing page profesional para un estudio de tatuajes.</p>
             <div class="proyecto-buttons">
-              <a href="proyectos/demo_tatuador/index.html" target="_blank" class="btn-primary">
+              <a
+                href="proyectos/demo_tatuador/index.html"
+                target="_blank"
+                class="btn-primary"
+              >
                 Ver Demo
               </a>
             </div>
           </div>
 
           <div class="proyecto-card">
-            <img src="assets/logo.jpeg" class="proyecto-thumb" alt="Bufete Manzano" />
+            <img
+              src="assets/logo.jpeg"
+              class="proyecto-thumb"
+              alt="Bufete Manzano"
+            />
             <h3>Bufete Manzano | Castro & Asoc.</h3>
             <p>Landing page corporativa desarrollada como demo profesional.</p>
             <div class="proyecto-buttons">
-              <a href="proyecto/demo_bufete/index.html" target="_blank" class="btn-primary">
+              <a
+                href="proyecto/demo_bufete/index.html"
+                target="_blank"
+                class="btn-primary"
+              >
                 Ver Demo
               </a>
             </div>
@@ -165,8 +199,11 @@
     <footer class="footer">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <h3>Aureon</h3>
-          <p>Desarrollador Web Junior — Construyendo soluciones claras y modernas.</p>
+          <h3>IO web solutions</h3>
+          <p>
+            Desarrollador Web Junior — Construyendo soluciones claras y
+            modernas.
+          </p>
         </div>
 
         <div class="footer-links">
@@ -188,25 +225,46 @@
       </div>
 
       <div class="footer-copy">
-        © 2026 Aureon — Todos los derechos reservados.
+        © 2026 IO soluciones web — Todos los derechos reservados.
       </div>
     </footer>
 
     <!-- ================= ANIMACIONES ================= -->
     <script>
-      const reveals = document.querySelectorAll('.reveal');
+      const reveals = document.querySelectorAll(".reveal");
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.2 });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.2 },
+      );
 
-      reveals.forEach(el => observer.observe(el));
+      reveals.forEach((el) => observer.observe(el));
+      function soloTexto(input) {
+        input.value = input.value.replace(/[0-9]/g, "");
+      }
     </script>
+
+    // ================= BOTÓN DE WHATSAPP =================
+    <a
+      href="https://wa.me/34698875464?text=Hola%20Leonel,%20quiero%20hacer%20una%20consulta"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="WhatsApp"
+    >
+      <lord-icon
+        src="https://cdn.lordicon.com/ayhtotha.json"
+        trigger="loop"
+        delay="1500"
+        colors="primary:#25d366"
+        style="width: 70px; height: 70px"
+      >
+      </lord-icon>
+    </a>
   </body>
 </html>
-
-
