@@ -72,14 +72,30 @@ p {
 }
 
 /* ================== HERO ================== */
+/* ===========================
+   HERO CON IMAGEN DE FONDO
+   =========================== */
+
 .hero {
-  background: radial-gradient(
-    circle at center,
-    #ffffff 0%,
-    #eef2f7 50%,
-    #dce3ec 100%
-  );
+  padding: 120px 20px;
+  text-align: center;
+  position: relative;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(139, 204, 244, 0.703),
+      rgba(139, 204, 244, 0.597),
+      rgb(250, 248, 248)
+    ),
+    url("../assets/abstrac.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* efecto premium */
 }
+
 
 .hero-grid {
   display: grid;
